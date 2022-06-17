@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="speed-test">
+            <h1>Test Your Typing Speed</h1>
+        </div>
+        <div class="details">
+
+            <div class="detail-tiles" id="result1">
+                <p class="heading">WPM</p>
+                <p class="value"  id="wpm">Val</p>
+            </div>
+
+            <div class="detail-tiles" id="result2">
+                <p class="heading">CPM</p>
+                <p class="value" id="cpm">Val</p>
+            </div>
+
+            <div class="detail-tiles" >
+                <p class="heading">Errors</p>
+                <p class="value" id="errors">0</p>
+            </div>
+
+            <div class="detail-tiles" >
+                <p class="heading">Time</p>
+                <p class="value" id="time">60s</p>
+            </div>
+
+            <div class="detail-tiles" >
+                <p class="heading">%Accuracy</p>
+                <p class="value" id="accuracy">100</p>
+            </div>
+        </div>
+        <div class="instruction" >
+                Click on the area below to start the game.
+        </div>
+        <div class="text-area">
+            <textarea class="txtAr" placeholder="start typing here..." cols="40" rows="2" onfocus="start()"  ></textarea>
+        </div>
+        <div  id="btn">
+            <button onclick="restart()">Restart</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
